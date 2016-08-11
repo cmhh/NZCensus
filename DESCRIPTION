@@ -1,0 +1,10 @@
+Package: NZCensus
+Type: Package
+Title: New Zealand Census of Populations and Dwellings Count Data by Geographic Area
+Version: 0.1.0
+Author: Chris Hansen
+Maintainer: Chris Hansen <cmhhansen@outlook.com>
+Description: A repackaging of Statistics New Zealand's Census 'Meshblock' dataset.
+License: GPL
+LazyData: TRUE
+RoxygenNote: 5.0.1
