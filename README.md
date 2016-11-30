@@ -63,10 +63,19 @@ knitr::kable(head(dwelling)[,1:10], format = "markdown")
 |MB        |0000200 |NA          | 2006|    24|     0|     0|     3|    24|    27|
 |MB        |0000200 |NA          | 2013|    27|     3|     0|     3|    30|    33|
 
+
+## [`NZCensusDemos`](https://github.com/cmhh/NZCensusDemos)
+
 There is a companion package,
 [`NZCensusDemos`](https://github.com/cmhh/NZCensusDemos).  This package
-provides web appications written with `shiny` to showcase the datasets
-provided by this package.
+provides web applications written with `shiny` to showcase the data.  It can
+be installed via:
+
+```r
+devtools::install_github('cmhh/NZCensusDemos')
+```
+
+It currently provides 2 functions: `mapdemo` and `distributiondemo`:
 
 ![`NZCensusDemos::mapdemo()`](img/mapdemo.png)
 
