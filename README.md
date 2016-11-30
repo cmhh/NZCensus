@@ -34,34 +34,34 @@ of `datadictionary` and `dwelling`:
 
 ```r
 library(NZCensus)
-knitr::kable(head(datadictionary))
+knitr::kable(head(datadictionary), format = "markdown")
 ```
 
 
 
-name    type       subtype    variable                                      outcome                                                                 notes                                                                                                                                                               
-------  ---------  ---------  --------------------------------------------  ----------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-V0001   dwelling   dwelling   Occupied private dwelling type                Separate House                                                                                                                                                                                                                              
-V0002   dwelling   dwelling   Occupied private dwelling type                Two or More Flats/Units/Townhouses/ Apartments/Houses Joined Together                                                                                                                                                                       
-V0003   dwelling   dwelling   Occupied private dwelling type                Other Occupied Private Dwellings                                        Consists of mobile and improvised dwellings roofless or rough sleepers and dwellings in a motor camp. In 2001 this category was called Temporary Private Dwellings. 
-V0004   dwelling   dwelling   Occupied private dwelling type                Occupied Private Dwelling Not Further Defined                                                                                                                                                                                               
-V0005   dwelling   dwelling   Occupied private dwelling type                Total occupied private dwellings                                                                                                                                                                                                            
-V0006   dwelling   dwelling   Dwelling record type for occupied dwellings   Occupied Private Dwelling                                                                                                                                                                                                                   
+|name  |type     |subtype  |variable                                    |outcome                                                               |notes                                                                                                                                                               |
+|:-----|:--------|:--------|:-------------------------------------------|:---------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|V0001 |dwelling |dwelling |Occupied private dwelling type              |Separate House                                                        |                                                                                                                                                                    |
+|V0002 |dwelling |dwelling |Occupied private dwelling type              |Two or More Flats/Units/Townhouses/ Apartments/Houses Joined Together |                                                                                                                                                                    |
+|V0003 |dwelling |dwelling |Occupied private dwelling type              |Other Occupied Private Dwellings                                      |Consists of mobile and improvised dwellings roofless or rough sleepers and dwellings in a motor camp. In 2001 this category was called Temporary Private Dwellings. |
+|V0004 |dwelling |dwelling |Occupied private dwelling type              |Occupied Private Dwelling Not Further Defined                         |                                                                                                                                                                    |
+|V0005 |dwelling |dwelling |Occupied private dwelling type              |Total occupied private dwellings                                      |                                                                                                                                                                    |
+|V0006 |dwelling |dwelling |Dwelling record type for occupied dwellings |Occupied Private Dwelling                                             |                                                                                                                                                                    |
 
 ```r
-knitr::kable(head(dwelling)[,1:10])
+knitr::kable(head(dwelling)[,1:10], format = "markdown")
 ```
 
 
 
-geography   code      description    year   V0001   V0002   V0003   V0004   V0005   V0006
-----------  --------  ------------  -----  ------  ------  ------  ------  ------  ------
-MB          0000100   NA             2001       6      NA      NA      NA       6       9
-MB          0000100   NA             2006      NA      NA      NA      NA       0      NA
-MB          0000100   NA             2013      NA      NA      NA      NA       0      NA
-MB          0000200   NA             2001      24       0       0       6      30      30
-MB          0000200   NA             2006      24       0       0       3      24      27
-MB          0000200   NA             2013      27       3       0       3      30      33
+|geography |code    |description | year| V0001| V0002| V0003| V0004| V0005| V0006|
+|:---------|:-------|:-----------|----:|-----:|-----:|-----:|-----:|-----:|-----:|
+|MB        |0000100 |NA          | 2001|     6|    NA|    NA|    NA|     6|     9|
+|MB        |0000100 |NA          | 2006|    NA|    NA|    NA|    NA|     0|    NA|
+|MB        |0000100 |NA          | 2013|    NA|    NA|    NA|    NA|     0|    NA|
+|MB        |0000200 |NA          | 2001|    24|     0|     0|     6|    30|    30|
+|MB        |0000200 |NA          | 2006|    24|     0|     0|     3|    24|    27|
+|MB        |0000200 |NA          | 2013|    27|     3|     0|     3|    30|    33|
 
 There is a companion package,
 [`NZCensusDemos`](https://github.com/cmhh/NZCensusDemos).  This package
